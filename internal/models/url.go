@@ -77,7 +77,7 @@ func (u *URL) Delete() error {
 	}
 	defer stmt.Close()
 
-	_, err = stmt.Exec()
+	_, err = stmt.Exec(u.ShortCode)
 	return err
 }
 
