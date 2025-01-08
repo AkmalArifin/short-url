@@ -1,5 +1,8 @@
 build:
 	go build -o ./cmd/short-url ./internal/main.go
 
-run:
+execute:
 	./cmd/short-url
+
+run:
+	go run ./internal/main.go

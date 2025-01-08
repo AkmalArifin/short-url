@@ -1,0 +1,6 @@
+PUT http://localhost:8080/shorten/sM7j
+Content-Type: application/json
+
+{
+    "url": "https://www.instagram.com/eimativa/"
+}
