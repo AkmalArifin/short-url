@@ -49,16 +49,15 @@ The method using to create the unique short code is creating a random string of 
     DB_NAME=
    ```
    
-3. **Build the execution program:**
-```
-   make build
-```
+4. **Build the execution program:**
+   ```
+      make build
+   ```
 
-4. **Execute the program**
-```
-   make execute
-
-```
+5. **Execute the program**
+   ```
+      make execute
+   ```
 
 ## API Endpoints
 
@@ -190,7 +189,7 @@ Get the usage statistics for a shortened URL.
 
 - **Description:** Retrieves the usage statistics, including the access count, for the given shortened URL.
 
-### **GET /<short-code>**
+### **GET /<short_code>**
 
 Use the shortend link to redirect.
 
