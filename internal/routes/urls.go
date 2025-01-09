@@ -45,7 +45,7 @@ func createUrl(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusAccepted, gin.H{"message": "data created", "url": url})
+	c.JSON(http.StatusCreated, gin.H{"message": "data created", "url": url})
 }
 
 func updateURL(c *gin.Context) {
@@ -70,7 +70,7 @@ func updateURL(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusAccepted, gin.H{"message": "data updated"})
+	c.JSON(http.StatusCreated, gin.H{"message": "data updated"})
 }
 
 func redirect(c *gin.Context) {
@@ -106,5 +106,5 @@ func deleteUrl(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusAccepted, gin.H{"message": "data deleted"})
+	c.JSON(http.StatusNoContent, gin.H{"message": "data deleted"})
 }
